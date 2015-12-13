@@ -5,6 +5,6 @@ if (hspd !=0) {
     if (abs(hspd)-amount > 0) {
         hspd -= amount*image_xscale;
         } else {
-            hspd = 1;
+            hspd = 0;
     }
 }
