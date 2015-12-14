@@ -125,6 +125,30 @@ take_damage_water();
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="Boss">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// take damage
+take_damage();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="Sapphire">
       <action>
         <libid>1</libid>
@@ -146,6 +170,10 @@ take_damage_water();
 PlayerStats.sapphires += 1;
 with (other) instance_destroy();
 audio_play_sound(snd_tink, 4, false);
+
+if (instance_exists(PlayerStats) &amp;&amp; PlayerStats.hp &lt;= 5)  {
+     PlayerStats.hp += 1;
+}
 </string>
           </argument>
         </arguments>
@@ -217,7 +245,7 @@ if (above_enemy &amp;&amp; (falling || state = ledge_grab_state)) {
           <argument>
             <kind>1</kind>
             <string>/// Go to next level
-if (up) {
+if (up &amp;&amp; other.visible == true) {
     y = yprevious;
     state = exit_state;
      audio_stop_sound(snd_jump);
