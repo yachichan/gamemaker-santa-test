@@ -72,6 +72,59 @@ script_execute(state);
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="Bubbles">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Splash water
+if (vspd &gt; 0 ) {
+    with (other) {
+        speed = random_range(4, 10);
+        direction = random_range(45, 135);
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="water">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// take damage
+take_damage_water();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="Sapphire">
       <action>
         <libid>1</libid>
@@ -139,24 +192,7 @@ if (above_enemy &amp;&amp; (falling || state = ledge_grab_state)) {
     // play the sound
      audio_play_sound(snd_step, 6, false)
 } else {
-    // Take damage
-    if (state != hurt_state) {
-        audio_emitter_pitch(audio_em, 1.6);
-        audio_emitter_gain(audio_em, 1.4);
-        audio_play_sound_on(audio_em, snd_ouch, false, 8);
-        
-        image_blend = make_colour_rgb(220, 150, 150);
-        vspd = -10
-        hspd = (sign(x-other.x)*5);
-        
-        state = hurt_state;
-        
-        move(Solid);
-        
-        if (instance_exists(PlayerStats)) {
-            PlayerStats.hp -= 1;
-        }
-    }
+    take_damage();
 }
 </string>
           </argument>

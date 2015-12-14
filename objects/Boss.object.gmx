@@ -82,6 +82,56 @@ audio_em = audio_emitter_create();
             <kind>1</kind>
             <string>/// Execute the state
 script_execute (state);
+
+//draw the boss blue 
+if (place_meeting(x, y, water)) {
+    image_blend = make_colour_rgb(128, 174, 255);
+} else {
+    image_blend = c_white
+}
+
+// Make the boss die
+if (hp &lt;= 0) {
+    repeat (50) {
+        instance_create(bbox_left+random(sprite_width-24), bbox_top+random(sprite_height), Bubbles);
+    }
+    if (audio_is_playing(snd_boss)) {
+        audio_stop_sound(snd_boss);
+    }
+    if (audio_is_playing(snd_music_germanholiday)) {
+        audio_stop_sound(snd_music_germanholiday);
+    }
+    instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Bubbles">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Splash water
+if (vspd &gt; 0 ) {
+    with (other) {
+        speed = random_range(4, 10);
+        direction = random_range(45, 135);
+    }
+}
 </string>
           </argument>
         </arguments>

@@ -47,6 +47,7 @@
         <sprite>sprites\spr_box_4</sprite>
         <sprite>sprites\sprite40</sprite>
         <sprite>sprites\spr_exit_bg</sprite>
+        <sprite>sprites\spr_water</sprite>
       </sprites>
     </sprites>
     <sprites name="Enemies">
@@ -74,6 +75,7 @@
     <sprites name="Effects">
       <sprite>sprites\spr_blood</sprite>
       <sprite>sprites\spr_sapphire_chunk</sprite>
+      <sprite>sprites\spr_bubbles</sprite>
     </sprites>
     <sprites name="Boss">
       <sprite>sprites\spr_boss</sprite>
@@ -97,6 +99,8 @@
       <script>scripts\apply_friction.gml</script>
       <script>scripts\hurt_state.gml</script>
       <script>scripts\exit_state.gml</script>
+      <script>scripts\take_damage.gml</script>
+      <script>scripts\take_damage_water.gml</script>
     </scripts>
     <scripts name="Snake States">
       <script>scripts\snake_move_right_state.gml</script>
@@ -129,6 +133,7 @@
     </objects>
     <objects name="Level">
       <object>objects\Solid</object>
+      <object>objects\water</object>
       <object>objects\Dirt</object>
       <object>objects\Entrance</object>
       <object>objects\Exit</object>
@@ -164,6 +169,7 @@
       <object>objects\music_rm2</object>
       <object>objects\Sapphire</object>
       <object>objects\Sapphire_chunk</object>
+      <object>objects\Bubbles</object>
     </objects>
     <objects name="Boss">
       <object>objects\Boss</object>
