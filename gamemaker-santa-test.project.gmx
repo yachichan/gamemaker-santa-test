@@ -113,6 +113,7 @@
     <scripts name="Boss Scripts">
       <script>scripts\boss_idle_state.gml</script>
       <script>scripts\boss_lift_state.gml</script>
+      <script>scripts\boss_chase_state.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
