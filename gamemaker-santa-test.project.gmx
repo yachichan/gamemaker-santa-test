@@ -15,6 +15,8 @@
     <sound>sound\snd_tink</sound>
     <sound>sound\snd_music_blipblop</sound>
     <sound>sound\snd_music_uponthehouse</sound>
+    <sound>sound\snd_music_germanholiday</sound>
+    <sound>sound\snd_boss</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
@@ -73,6 +75,9 @@
       <sprite>sprites\spr_blood</sprite>
       <sprite>sprites\spr_sapphire_chunk</sprite>
     </sprites>
+    <sprites name="Boss">
+      <sprite>sprites\spr_boss</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_menu</background>
@@ -105,7 +110,10 @@
       <script>scripts\spider_idle_state.gml</script>
       <script>scripts\spider_jump_state.gml</script>
     </scripts>
-    <script>scripts\script14.gml</script>
+    <scripts name="Boss Scripts">
+      <script>scripts\boss_idle_state.gml</script>
+      <script>scripts\boss_lift_state.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_title</font>
@@ -154,11 +162,15 @@
       <object>objects\Sapphire</object>
       <object>objects\Sapphire_chunk</object>
     </objects>
+    <objects name="Boss">
+      <object>objects\Boss</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_highscore</room>
     <room>rooms\rm_one</room>
+    <room>rooms\rm_boss</room>
     <room>rooms\rm_two</room>
     <room>rooms\rm_three</room>
     <room>rooms\rm_four</room>
