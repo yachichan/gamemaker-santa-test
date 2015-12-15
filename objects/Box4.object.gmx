@@ -3,9 +3,9 @@
   <spriteName>spr_box_4</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>7</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>PresentParent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events/>
   <PhysicsObject>0</PhysicsObject>

@@ -72,6 +72,134 @@ script_execute(state);
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="PresentParent">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collide with an enemy
+var above_enemy = y &lt;other.y+vspd;
+var falling = vspd &gt; 0;
+
+if (above_enemy &amp;&amp; (falling || state = ledge_grab_state)) {
+    if (!place_meeting(x,yprevious, Solid)) {
+    y=yprevious;
+    }
+
+    while(!place_meeting(x, y+1, other)) {
+        y++;
+    }
+    
+    // Kill the enemy
+    with (other) {
+        instance_destroy();
+    }
+    
+    // Bounce off enemy
+    vspd = -(16/2);
+    
+    // play the sound
+     audio_play_sound(snd_step, 6, false)
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Sapphire">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collect Sapphire
+PlayerStats.sapphires += 1;
+with (other) instance_destroy();
+audio_play_sound(snd_tink, 4, false);
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Potion">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// add health to player
+if (PlayerStats.hp &lt;= 5) {
+PlayerStats.hp += 1;
+}
+with (other) instance_destroy();
+audio_play_sound(snd_tink, 4, false);
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="DeathBlock">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// kill player
+take_damage_deathblock();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="Boss">
       <action>
         <libid>1</libid>
@@ -119,36 +247,6 @@ if (vspd &gt; 0 ) {
         speed = random_range(4, 10);
         direction = random_range(45, 135);
     }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="Sapphire">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Collect Sapphire
-PlayerStats.sapphires += 1;
-with (other) instance_destroy();
-audio_play_sound(snd_tink, 4, false);
-
-if (instance_exists(PlayerStats) &amp;&amp; PlayerStats.hp &lt;= 5)  {
-     PlayerStats.hp += 1;
 }
 </string>
           </argument>

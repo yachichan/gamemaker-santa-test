@@ -30,6 +30,7 @@
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_solid</sprite>
+      <sprite>sprites\spr_deathblock</sprite>
       <sprite>sprites\spr_dirt</sprite>
       <sprite>sprites\spr_entrance</sprite>
       <sprite>sprites\spr_exit</sprite>
@@ -76,6 +77,7 @@
       <sprite>sprites\spr_blood</sprite>
       <sprite>sprites\spr_sapphire_chunk</sprite>
       <sprite>sprites\spr_bubbles</sprite>
+      <sprite>sprites\spr_potion</sprite>
     </sprites>
     <sprites name="Boss">
       <sprite>sprites\spr_boss</sprite>
@@ -100,6 +102,7 @@
       <script>scripts\hurt_state.gml</script>
       <script>scripts\exit_state.gml</script>
       <script>scripts\take_damage.gml</script>
+      <script>scripts\take_damage_deathblock.gml</script>
       <script>scripts\take_damage_water.gml</script>
     </scripts>
     <scripts name="Snake States">
@@ -137,16 +140,12 @@
       <object>objects\Dirt</object>
       <object>objects\Entrance</object>
       <object>objects\Exit</object>
+      <object>objects\Sign2</object>
       <object>objects\Background</object>
       <objects name="background">
         <object>objects\Sign1</object>
-        <object>objects\Sign2</object>
         <object>objects\Tree1</object>
         <object>objects\Tree2</object>
-        <object>objects\Box1</object>
-        <object>objects\Box2</object>
-        <object>objects\Box3</object>
-        <object>objects\Box4</object>
         <object>objects\dirt_bg</object>
         <object>objects\Exit_bg</object>
       </objects>
@@ -167,18 +166,28 @@
       <object>objects\Blood</object>
       <object>objects\music_rm1</object>
       <object>objects\music_rm2</object>
-      <object>objects\Sapphire</object>
       <object>objects\Sapphire_chunk</object>
       <object>objects\Bubbles</object>
     </objects>
     <objects name="Boss">
       <object>objects\Boss</object>
     </objects>
+    <object>objects\DeathBlock</object>
+    <objects name="Collectables">
+      <object>objects\Potion</object>
+      <object>objects\Box4</object>
+      <object>objects\PresentParent</object>
+      <object>objects\Box1</object>
+      <object>objects\Box2</object>
+      <object>objects\Box3</object>
+      <object>objects\Sapphire</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_highscore</room>
     <room>rooms\rm_one</room>
+    <room>rooms\rm_one_1</room>
     <room>rooms\rm_two</room>
     <room>rooms\rm_three</room>
     <room>rooms\rm_four</room>
