@@ -76,6 +76,7 @@
     <sprites name="Effects">
       <sprite>sprites\spr_blood</sprite>
       <sprite>sprites\spr_sapphire_chunk</sprite>
+      <sprite>sprites\spr_darkness</sprite>
       <sprite>sprites\spr_bubbles</sprite>
       <sprite>sprites\spr_potion</sprite>
     </sprites>
@@ -166,6 +167,7 @@
       <object>objects\Blood</object>
       <object>objects\music_rm1</object>
       <object>objects\music_rm2</object>
+      <object>objects\Darkness</object>
       <object>objects\Sapphire_chunk</object>
       <object>objects\Bubbles</object>
     </objects>
@@ -188,8 +190,8 @@
     <room>rooms\rm_highscore</room>
     <room>rooms\rm_one</room>
     <room>rooms\rm_two</room>
-    <room>rooms\rm_two_2</room>
     <room>rooms\rm_three</room>
+    <room>rooms\rm_three_2</room>
     <room>rooms\rm_four</room>
     <room>rooms\rm_five</room>
     <room>rooms\rm_boss</room>
