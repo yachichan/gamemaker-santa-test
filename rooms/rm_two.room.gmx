@@ -451,6 +451,33 @@
     <instance objName="Dirt" x="1888" y="352" name="inst_0C60E496" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="1920" y="352" name="inst_1901C861" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="1952" y="352" name="inst_E835A679" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2272" y="320" name="inst_0B64FCF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2304" y="320" name="inst_86EE9CCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2336" y="320" name="inst_8B4403DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2400" y="352" name="inst_447E094F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2368" y="352" name="inst_786577C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2336" y="352" name="inst_D0B9EB34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2304" y="352" name="inst_8F9D35AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2272" y="352" name="inst_CA928198" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2240" y="352" name="inst_1413CC68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2208" y="352" name="inst_33E6F33C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2400" y="384" name="inst_2AF42C8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2368" y="384" name="inst_54C8276D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2336" y="384" name="inst_C4C9180A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2304" y="384" name="inst_B7F95FAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="1888" y="384" name="inst_DF9528A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="1920" y="384" name="inst_E350C797" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="1952" y="384" name="inst_FC4B33B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="1984" y="352" name="inst_DFC8C0FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2016" y="352" name="inst_695A8EFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2048" y="352" name="inst_062B40A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2080" y="352" name="inst_985CEA9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2112" y="352" name="inst_F8B2ACC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2144" y="352" name="inst_680486FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="2176" y="352" name="inst_EC3991F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="928" y="416" name="inst_2190F6B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="896" y="416" name="inst_8397AB0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="1984" y="384" name="inst_C1A26841" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="224" y="0" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_D7BB51DC" depth="1000000" locked="-1" colour="4294967295" scaleX="1" scaleY="1"/>

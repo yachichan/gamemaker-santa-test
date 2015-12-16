@@ -105,6 +105,7 @@
     <instance objName="Dirt" x="576" y="256" name="inst_C1B78980" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="544" y="256" name="inst_9B3C0F87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Exit" x="720" y="295" name="inst_AE19DF2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Entrance" x="32" y="112" name="inst_16404B4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="32" y="288" name="inst_E8B8A383" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="32" y="256" name="inst_BE5DA2AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="32" y="224" name="inst_0C7844CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
