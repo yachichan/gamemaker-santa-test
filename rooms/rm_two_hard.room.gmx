@@ -478,7 +478,7 @@
     <instance objName="Dirt" x="928" y="416" name="inst_2190F6B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="896" y="416" name="inst_8397AB0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="1984" y="384" name="inst_C1A26841" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Exit" x="416" y="256" name="inst_9B5BCDD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="music_rm2" x="64" y="80" name="inst_04A76682" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="224" y="0" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_D7BB51DC" depth="1000000" locked="-1" colour="4294967295" scaleX="1" scaleY="1"/>

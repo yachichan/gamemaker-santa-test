@@ -2,7 +2,8 @@
 if (image_alpha > 0){
     image_alpha -=.25;
 } else {
-    if (room != rm_seven){
+// TEST ROOM CHANGE BACK TO rm_seven
+    if (room != rm_one){
         room_goto_next();
         } else {
             // Calculate the score

@@ -108,9 +108,16 @@ switch (room){
 
     case rm_highscore:
         draw_set_halign(fa_center);
-        draw_text_colour(room_width/2, 160, "Your Time Was: " + string(floor(time/room_speed)), c_black, c_black, c_black, c_black, .5);
-        draw_text_colour(room_width/2, 200, "Your Score Was: " + string(score), c_black, c_black, c_black, c_black, .5);
-        draw_text_colour(room_width/2, 240, "The Highscore Was: " + string(highscore), c_black, c_black, c_black, c_black, .5);
+        draw_text_colour(room_width/2+1, 28, "Merry Christmas!!!", c_black, c_black, c_black, c_black, .3);
+        draw_text_colour(room_width/2, 25, "Merry Christmas!!!", c_white, c_white, c_white, c_white, 1);
+        // shaddow
+        draw_text_colour(room_width/2+1, 183, "Your Time Was: " + string(floor(time/room_speed)), c_black, c_black, c_black, c_black, .3);
+        draw_text_colour(room_width/2+1, 203, "Your Score Was: " + string(score), c_black, c_black, c_black, c_black, .3);
+        draw_text_colour(room_width/2+1, 223, "The Highscore Was: " + string(highscore), c_black, c_black, c_black, c_black, .3);
+        // main
+        draw_text_colour(room_width/2, 180, "Your Time Was: " + string(floor(time/room_speed)), c_white, c_white, c_white, c_white, 1);
+        draw_text_colour(room_width/2, 200, "Your Score Was: " + string(score), c_white, c_white, c_white, c_white, 1);
+        draw_text_colour(room_width/2, 220, "The Highscore Was: " + string(highscore), c_white, c_white, c_white, c_white, 1);
     
     break;
     

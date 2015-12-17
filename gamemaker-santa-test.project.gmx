@@ -50,6 +50,17 @@
         <sprite>sprites\spr_exit_bg</sprite>
         <sprite>sprites\spr_water</sprite>
       </sprites>
+      <sprites name="workshop">
+        <sprite>sprites\spr_tree_christmas</sprite>
+        <sprite>sprites\spr_stone</sprite>
+        <sprite>sprites\spr_bg_red_bottom</sprite>
+        <sprite>sprites\spr_bg_green_bottom</sprite>
+        <sprite>sprites\spr_bg_green_mid</sprite>
+        <sprite>sprites\spr_bg_green_top</sprite>
+        <sprite>sprites\spr_bg_red_mid</sprite>
+        <sprite>sprites\spr_bg_red_top</sprite>
+        <sprite>sprites\sprite58</sprite>
+      </sprites>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_snake</sprite>
@@ -151,6 +162,14 @@
         <object>objects\Tree2</object>
         <object>objects\dirt_bg</object>
         <object>objects\Exit_bg</object>
+      </objects>
+      <objects name="workshop">
+        <object>objects\ChristmasTree</object>
+        <object>objects\Fireplace</object>
+        <object>objects\BGStone</object>
+        <object>objects\RedBottom</object>
+        <object>objects\RedTop</object>
+        <object>objects\RedMid</object>
       </objects>
     </objects>
     <objects name="Enemies">
