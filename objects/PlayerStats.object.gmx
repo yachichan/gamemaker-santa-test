@@ -96,12 +96,12 @@ switch (room){
     case rm_menu :
         draw_set_halign(fa_center);
         draw_set_font(fnt_title);
-        draw_text_colour(room_width/2+4, 32+6, "Santa Game #Whatever", c_black, c_black, c_black, c_black, .5);
-        draw_text_colour(room_width/2, 32, "Santa Game #Whatever", c_white, c_white, c_white, c_white, 1);
+        draw_text_colour(room_width/2+3, 30, "Santa Game #Whatever", c_black, c_black, c_black, c_black, .3);
+        draw_text_colour(room_width/2, 25, "Santa Game #Whatever", c_white, c_white, c_white, c_white, 1);
    
         draw_set_font(fnt_start);
-        draw_text_colour(room_width/2+4, room_height-44, "Press Any Key to Start", c_black, c_black, c_black, c_black, .5);
-        draw_text_colour(room_width/2, room_height-48, "Press Any Key to Start", c_white, c_white, c_white, c_white, 1);
+        draw_text_colour(room_width/2+1, 203, "Press Any Key to Start", c_black, c_black, c_black, c_black, .3);
+        draw_text_colour(room_width/2, 200, "Press Any Key to Start", c_white, c_white, c_white, c_white, 1);
        
 
     break;

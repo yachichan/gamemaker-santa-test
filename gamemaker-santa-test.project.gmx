@@ -60,6 +60,11 @@
         <sprite>sprites\spr_bg_red_mid</sprite>
         <sprite>sprites\spr_bg_red_top</sprite>
         <sprite>sprites\sprite58</sprite>
+        <sprite>sprites\spr_window_bottom</sprite>
+        <sprite>sprites\spr_window_top</sprite>
+        <sprite>sprites\spr_wreath</sprite>
+        <sprite>sprites\spr_sign_easy</sprite>
+        <sprite>sprites\spr_sign_hard</sprite>
       </sprites>
     </sprites>
     <sprites name="Enemies">
@@ -170,6 +175,14 @@
         <object>objects\RedBottom</object>
         <object>objects\RedTop</object>
         <object>objects\RedMid</object>
+        <object>objects\WindowTop</object>
+        <object>objects\WindowBottom</object>
+        <object>objects\GreenTop</object>
+        <object>objects\GreenBottom</object>
+        <object>objects\GreenMid</object>
+        <object>objects\Wreath</object>
+        <object>objects\Easy</object>
+        <object>objects\Hard</object>
       </objects>
     </objects>
     <objects name="Enemies">
