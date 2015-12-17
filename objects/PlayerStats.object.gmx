@@ -67,37 +67,7 @@ if (start == true &amp;&amp; room = rm_menu) {
 /// to start the game
 var menureturn = keyboard_check_pressed(vk_anykey);
 
-if (menureturn == true &amp;&amp; room = rm_highscore) {
-    game_restart();
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Play the background music
 
-// Create an audio emitter
-//audio_em = audio_emitter_create();
-//audio_emitter_gain(audio_em, .1);
-//audio_play_sound_on(audio_em, snd_music_blipblop, true, 10);
 </string>
           </argument>
         </arguments>
@@ -138,13 +108,10 @@ switch (room){
 
     case rm_highscore:
         draw_set_halign(fa_center);
-        draw_text_colour(room_width/2, 64, "Your Time Was: " + string(floor(time/room_speed)), c_black, c_black, c_black, c_black, .5);
-        draw_text_colour(room_width/2, 96, "Your Score Was: " + string(score), c_black, c_black, c_black, c_black, .5);
-        draw_text_colour(room_width/2, 128, "The Highscore Was: " + string(highscore), c_black, c_black, c_black, c_black, .5);
+        draw_text_colour(room_width/2, 160, "Your Time Was: " + string(floor(time/room_speed)), c_black, c_black, c_black, c_black, .5);
+        draw_text_colour(room_width/2, 200, "Your Score Was: " + string(score), c_black, c_black, c_black, c_black, .5);
+        draw_text_colour(room_width/2, 240, "The Highscore Was: " + string(highscore), c_black, c_black, c_black, c_black, .5);
     
-        draw_set_font(fnt_start);
-        draw_text_colour(room_width/2+4, room_height-44, "Press Any Key to Return to Menu", c_black, c_black, c_black, c_black, 1);
-        //draw_text_colour(room_width/2, room_height-48, "Press Any Key to Return to Menu", c_white, c_white, c_white, c_white, 1);
     break;
     
     default:

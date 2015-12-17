@@ -3,7 +3,7 @@
   <caption></caption>
   <width>1940</width>
   <height>440</height>
-  <vsnap>16</vsnap>
+  <vsnap>1</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
@@ -88,7 +88,7 @@
     <instance objName="Dirt" x="0" y="64" name="inst_05069CD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="0" y="32" name="inst_63B6925C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Boss" x="1712" y="320" name="inst_3E0C8A44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Sign2" x="80" y="288" name="inst_F57C1C3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Sign2" x="176" y="292" name="inst_F57C1C3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="608" y="384" name="inst_9CEC6709" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="640" y="384" name="inst_54C8A217" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="640" y="352" name="inst_0B420F8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -329,6 +329,11 @@
     <instance objName="Dirt" x="1856" y="48" name="inst_E311D434" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="1248" y="48" name="inst_2983C088" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="1888" y="64" name="inst_999B2EFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Tree2" x="144" y="282" name="inst_973B39B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Tree2" x="720" y="282" name="inst_2DB88227" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Tree1" x="224" y="283" name="inst_55ACE435" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Tree1" x="432" y="316" name="inst_13A3896F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Tree1" x="64" y="283" name="inst_29C0960C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="224" y="0" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_D7BB51DC" depth="1000000" locked="-1" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -1,9 +1,9 @@
-///exit_state
+///exithard_state
 if (image_alpha > 0){
     image_alpha -=.25;
 } else {
-    if (room != rm_seven){
-        room_goto_next();
+    if (room != rm_boss_hard){
+        room_goto(rm_two_hard);
         } else {
             // Calculate the score
             score = PlayerStats.sapphires * 100; 
